@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combustibles Acevedo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo2.jpg" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <!--seccion header-->
+    <header>
+        <div class="logo">
+            <img src="img/logo2.jpg" alt="logo de combustibles acevedo">
+            <h1>Combustibles Acevedo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#servicios" onclick="seleccionar()">Sobre Nosotros</a></li>
+                <li><a href="#porquenosotros" onclick="seleccionar()">¿Porque Nosotros?</a></li>
+                <li><a href="#ubicaciones" onclick="seleccionar()">Ubicaciones</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--hero-->
+    <section class="hero">
+        <h1>Calidad que <br> impulsa tu camino</h1>
+        <button >Pide tu servicio aquí</button>
+    </section>
+
+    <!--seccion servicios-->
+    <section id="servicios" class="servicios">
+        <div class="sobre_nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>En Combustibles Acevedo, nos especializamos en la distribución de diésel y gasolina con el compromiso de ofrecer productos de alta calidad y un servicio confiable. Nuestro objetivo es abastecer a pequeños consumidores y minoristas, brindando soluciones eficientes para el suministro de combustible en diversas industrias.</p>
+        </div>
+        <div class="imagenes">
+            <img src="img/diesel.png" alt="imagendiesel" class="tanque">
+            <img src="img/diesel2.png" alt="imagendiesel" class="mangueradiesel">
+        </div>
+    </section>
+
+    <!--seccion ¿porque nosotros?-->
+    <section id="porquenosotros" class="porquenosotros">
+        <div class="nuestrodiesel">
+            <h2>¿Porque elegir nuestro diesel?</h2>
+            <img src="img/logo2.jpg" alt="logo diesel">
+            <h2>Combustibles Acevedo</h2>
+        </div>
+        <div class="explicacion_diesel">
+            <p class="explicacion-diesel">
+                En Combustibles Acevedo, ofrecemos diésel de la más alta calidad, garantizando un rendimiento óptimo para tu maquinaria y vehículos. Nuestro combustible ha sido formulado para mejorar la eficiencia del motor, reducir el desgaste y minimizar las emisiones contaminantes, contribuyendo así al cuidado del medio ambiente.
+            </p>
+            <ul class="ventajas_diesel">
+                <li><i class='bx bxs-check-square'></i></i><strong> Máxima eficiencia:</strong> Nuestra fórmula optimizada mejora la combustión...</li>
+                <li><i class='bx bxs-check-square'></i><strong> Menos emisiones:</strong> Apostamos por un diésel más limpio...</li>
+                <li><i class='-check-square'></i><strong> Atención personalizada:</strong> Brindamos asesoramiento y soporte...</li>
+                <li><i class='bx bxsbx bxs-check-square'></i><strong> Entrega confiable:</strong> Contamos con un servicio ágil y seguro...</li>
+                <li><i class='bx bxs-check-square'></i><strong> Producto Certificado:</strong> Ideal para maximizar rendimiento y eficiencia</li>
+            </ul>
+            <div class="certificado">
+                <img src="img/diesel3.png" alt="diesel3">
+                <img src="img/diesel4.png" alt="diesel4">
+            </div>
+        </div>
+    </section>
+
+    <!--seccion ubicaciones-->
+    <section id="ubicaciones" class="ubicaciones">
+        <div class="nuestrodiesel">
+            <h2>Ubicacion</h2>
+            <img src="img/logo2.jpg" alt="logo diesel">
+            <h2>Combustibles Acevedo</h2>
+        </div>
+        <div class="encuentranos">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7485.450374065627!2d-98.95118967705277!3d20.270228996275904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8661224134b81edf%3A0xf62406cfd1178c06!2sPEMEX%20Estaci%C3%B3n%20Acevedo%20S%20de%20RL!5e0!3m2!1ses!2smx!4v1741139061089!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <img src="img/map.png" alt="">
+        <ul>
+                <h2>Encuentranos en: </h2>
+                <h3>Actopan - Tula, Benito Juárez, 42608 Actopan, Hgo.</h3>
+                <li>Lunes: 9 A.M. - 6 P.M.</li>
+                <li>Martes: 9 A.M. - 6 P.M.</li>
+                <li>Miercoles 9 A.M. - 6 P.M.</li>
+                <li>Jueves: 9 A.M. - 6 P.M.</li>
+                <li>Viernes: 9 A.M. - 6 P.M.</li>
+                <li>Sabado: Cerrado</li>
+                <li>Domingo: Cerrado</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--seccion contacto-->
+    <section id="contacto" class="contacto">
+        <div class="col">
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Numero Telefonico">
+            <input type="text" placeholder="Direccion de correo">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button>
+                Enviar mensaje <i class="fa-regular fa-paper-plane"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        <div class="contactoimg">
+            <img src="img/diesel.png" alt="diesel">
+        </div>
+    </section>
+
+    <!--seccion footer-->
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Aquí irá la información de contacto...</p>
+        </div>
+        <div class="footer-section">
+            <h3>Redes Sociales</h3>
+            <p>Aquí irán los enlaces a redes sociales...</p>
+        </div>
+        <div class="footer-section">
+            <h3>Dirección</h3>
+            <p>Aquí irá la dirección...</p>
+        </div>
+        <div class="footer-section">
+            <h3>Aviso Legal</h3>
+            <p>Aquí irá el aviso legal...</p>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/7715681075" class="whatsapp" target="_blank">
+        <img src="img/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+    
+</body>
+</html>

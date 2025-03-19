@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-family: 'Montserrat' sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*---------------header--------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141E39;
+    color: white;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/*------------hero--------------*/
+
+.hero {
+    background-image: url(img/hero.png);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 58vh;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.hero button {
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 20px;
+    z-index: -1;
+    transition: 1s;
+}
+
+/*----------servicios-------------*/
+
+.servicios {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8rem;
+}
+
+.servicios p {
+    font-size: 28px;
+    width: 700px;
+}
+
+.servicios h2 {
+    font-size: 3.8rem;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    gap: 100px;
+}
+
+.imagenes img {
+    width: 80%;
+    margin-bottom: -50px;    
+}
+
+/*--------------¿porque nosotros?--------------*/
+
+
+.porquenosotros {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nuestrodiesel h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.explicacion_diesel {
+    font-size: 1.2rem;
+    line-height:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.explicacion-diesel {
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+.explicacion_diesel img {
+    width: 40vh;
+    display: flex;
+}
+
+.ventajas_diesel {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.ventajas_diesel li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+
+.ubicaciones {
+    height: 100vh;
+    align-items: center;
+    gap: 40px;
+} 
+
+.ubicaciones img {
+    width: 40%;
+    border-radius: 8%;
+    height: auto;
+}
+
+.ubicaciones h3 {
+    font-size: 12px;
+}
+
+.map {
+    border-radius: 5%;
+    width: 30%;
+    padding-left: 8rem;
+}
+
+.encuentranos {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 150px;
+    line-height: 1.8;
+    margin: 0;
+    list-style: none;
+}
+
+.encuentranos ul {
+    margin: 0;
+    list-style: none;
+    line-height: 1.8;
+}
+
+/*-----------------Contacto------------*/
+
+.contacto {
+    background-image: url(img/contact_bg.png);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 30px;
+}
+
+.contactoimg {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactoimg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contacto .container-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input, .contacto .col textarea {
+    display: block;
+    width: 80%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffcc00;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+.contacto .col img {
+    width: 100%;
+}
+
+.contacto .col .info {
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contacto .col .info ul {
+    list-style: none;
+}
+
+.contacto .col .info ul li {
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i {
+    color: #2ff1da;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*-----------footer-----------*/
+
+.footer {
+    background-color: #141E39;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    max-width: 250px;
+}
+
+.nuestrodiesel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    background-color: #ffcc00;
+    padding: 40px;
+ }
+
+.nuestrodiesel img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+.whatsapp img {
+    width: 60px; /* Ajusta el tamaño del icono */
+    height: auto;
+    border-radius: 45%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+}
+
+
+/*----------------------------------- 📱 Versión Móvil------------------------------ */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nuestrodiesel {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .nuestrodiesel img {
+        height: 30px;
+    }
+}
