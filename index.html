@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo2.jpg" type="image/png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
 </head>
 <body>
     <!--seccion header-->
@@ -18,7 +16,10 @@
             <img src="img/logo2.jpg" alt="logo de combustibles acevedo">
             <h1>Combustibles Acevedo</h1>
         </div>
-        <nav>
+        <div class="menu-hamburguesa">
+            <button>☰</button>
+        </div>
+        <nav class="nav-links" id="nav-links">
             <ul>
                 <li><a href="#servicios" onclick="seleccionar()">Sobre Nosotros</a></li>
                 <li><a href="#porquenosotros" onclick="seleccionar()">¿Porque Nosotros?</a></li>
@@ -27,6 +28,15 @@
             </ul>
         </nav>
     </header>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
     <!--hero-->
     <section class="hero">
@@ -131,7 +141,8 @@
             <p>Aquí irá el aviso legal...</p>
         </div>
     </footer>
-    
+
+    <!--boton de whatsapp-->
     <a href="https://wa.me/7715681075" class="whatsapp" target="_blank">
         <img src="img/whatsapp-icon.png" alt="WhatsApp">
     </a>
